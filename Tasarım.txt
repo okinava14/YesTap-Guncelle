@@ -1,0 +1,54 @@
+
+Yemek Satış ve Takip Otomasyonu * YESTAP ***
+
+Elektron motoru ve html paket olarak setup ve güncelleme özellikli paket program.
+
+YesTap/
+
+├── index.html
+├── main.js            // Ana Electron süreci
+├── package.json
+├── package-lock.json
+├── renderer.js
+├── styles.css
+├── build/             // Setup dosyalarının olduğu klasör
+├── images/  	 	 	// Sistemde kullanılan (Banner) resimler ve ikon klasörü
+├── node_modules/
+└── data/              // Veri tabanı görevi gören JSON dosyaları
+    ├── update/   	 	// İçinde güncelleme yapan yapı olacak klasör
+    ├── GunlukListe/   // İçinde Pdf ve Excel dosyaları ekleyecek klasör  
+    └── veriler/       // JSON dosyaları (Yemekler, Personeller vb.)
+    	├── yemekfiyatlari.json     // Yemeklerin Grubu, Adı ve Fiyatlarının tutulduğu dosya
+    	├── yemekmenu.json          // Bugünün Yemeklerinin tutulduğu dosya
+    	├── personeller.json        // Personellerin Sicili ve Adı Soyadının tutulduğu dosya
+    	├── gunlukadisyon.json      // Personellerin Seçtiği yemeklerin ve Adı Soyadının tutulduğu dosya
+    	├── gunluksatislar.json     // Bugünün satışlarının tutulduğu liste dosyası
+    	├── ayliksatislar.json      // İçinde bulunan (1-31) ayın satışlarının tutulduğu liste dosyası
+   	    ├── aylikbilanco.json       // Son bir aylık yemek sayıları ve toplam tutarların tutulduğu liste dosyası
+    	└── yillikbilanco.json       // Son bir yıllık yemek sayıları ve toplam tutarların tutulduğu liste dosyası
+
+
+
+    Sayfa görünüm tasarım yapısı; 8 sayfalı, ilk sayfa anagiriş (açılış) sayfası, en üstte Banner alanı,
+orta alan işlemlerin olduğu pencereler, en alttada imza alanı, Banner altında 8 adet buton, sırası ile isimleri:
+
+GÜNLÜK MENÜ
+YEMEK KAYIT
+GÜNLÜK SATIŞLAR
+AYLIK SATIŞLAR
+BİLANÇO
+    ├── AYLIK BİLANÇO
+    └── YILLIK BİLANÇO
+PERSONEL
+YEMEKLER
+AYARLAR
+    ├── PERSONEL SİCİL VE İSİM LİSTE DÜZENİ
+    ├── YEMEK GRUP VE FİYAT LİSTE DÜZENİ
+    ├── GÜNLÜK SATIŞ LİSTE DÜZENİ
+    ├── AYLIK SATIŞ LİSTE DÜZENİ
+    └── ONAY GRUBU LİSTE DÜZENİ
+
+
+Bu yazılım Electron Build ile açık kaynak kodlu ve tamamen ÜCRESİZ olarak hazırlanmıştır.
+Tasarım Okinava14 Tarafından Hazırlanmıştır. 0 530 973 49 13 Tüm Hakları Serbest Olup Geliştirmeye Açıktır.
+
